@@ -6,7 +6,7 @@ on:
 
 env:
   AWS_REGION: eu-north-1                   # set this to your preferred AWS region
-  ECR_REPOSITORY: 180294207856.dkr.ecr.eu-north-1.amazonaws.com/master  # Amazon ECR repository name
+  ECR_REPOSITORY: ${{ secrets.ECR_REPOSITORY }}  # Set Amazon ECR repository as a secret
   IMAGE_TAG: latest  # Set a generic variable for the image tag
 
 permissions:
